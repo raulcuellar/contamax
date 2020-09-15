@@ -1,0 +1,18 @@
+<div id="mySidebar" class="navbar-collapse">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="/inventario">Inventario</a>
+  <a href="/ingreso">Ingresos</a>
+  <a href="/egreso">Egresos</a>
+  <a href="#">Reportes</a>
+</div>
+<script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>

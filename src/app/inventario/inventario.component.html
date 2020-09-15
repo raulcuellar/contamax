@@ -1,0 +1,43 @@
+<h1>Inventario</h1>
+<div class="card-content">
+  <section class="selector1">
+    <input type="checkbox" class="selector-margin">Agregar/>
+    <input type="checkbox" class="selector-margin">Eliminar/>
+  </section>
+
+  <form class="custom-form" method="post" ng-submit="submit()">
+     <input
+      type="number"
+      name="cantidad"
+      placeholder="2"
+      required="required"
+    />
+    <input
+      type="text"
+      name="clave"
+      placeholder="Clave"
+      required="required"
+    />
+    <input
+      type="text"
+      name="descripcion"
+      placeholder="Descripción"
+      required="required"
+    />
+    <input
+      type="number"
+      name="costo"
+      placeholder="Costo"
+      required="required"
+    />
+    <input
+      type="number"
+      name="minimo"
+      placeholder="Mínimo inventario"
+      required="required"
+    />
+    <button type="submit">Registrar</button>
+  </form>
+
+
+</div>
