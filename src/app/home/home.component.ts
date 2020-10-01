@@ -7,6 +7,7 @@ import { UsersService } from "../users.service";
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  title ='contamax';
   constructor(public userService: UsersService) {}
   ngOnInit() {
     this.getUserLogged();
