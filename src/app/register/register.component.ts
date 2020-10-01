@@ -2,7 +2,6 @@ import { Component } from "@angular/core";
 import { UsersService } from "../users.service";
 
 @Component({
-  selector: "app-register",
   templateUrl: "./register.component.html",
   styleUrls: ["./register.component.css"]
 })
@@ -17,8 +16,14 @@ export class RegisterComponent {
 
   register() {
     const user = { email: this.email, password: this.password };
-    this.userService.register(user).subscribe(data => {
-      this.userService.setToken(data.token);
-    });
+    this.userService.register(user).subscribe(
+      data => {
+        this.userService.setToken(data.token);
+        this.router.navigateByUrl("/home");
+      },
+      error => {
+        console.log(error);
+      }
+    );
   }
 }
